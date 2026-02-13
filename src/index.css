@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+
+
+.bg-fixed-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fork-calendar {
+  width: 100%;
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+/* main calendar wrapper */
+.fork-calendar .rdp {
+  margin: 0 auto;
+}
+
+/* months container */
+.fork-calendar .rdp-months {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* month itself */
+.fork-calendar .rdp-month {
+  margin: 0 auto;
+}
+
+.fork-calendar .rdp-caption {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.fork-calendar .rdp-head_cell {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  text-align: center;
+}
+
+.fork-calendar .rdp-table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 6px; /* gives elegant gap */
+}
+
+.fork-calendar .rdp-day {
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  width: 42px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #333;
+  transition: 0.2s ease;
+}
+
+.fork-calendar .rdp-day:hover {
+  background: #eaf6f2;
+  border-color: #007a5e;
+  transform: scale(1.05);
+}
+
+.fork-calendar .rdp-day_selected {
+  background: #007a5e !important;
+  color: white !important;
+  border: none;
+}
+
+.fork-calendar .rdp-day_today {
+  border: 2px solid #007a5e;
+  font-weight: 800;
+}
+
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+

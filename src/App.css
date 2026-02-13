@@ -1,0 +1,49 @@
+.fork-calendar {
+  --rdp-cell-size: 46px;
+  --rdp-accent-color: #007a5e;
+  --rdp-background-color: #e6f4f1;
+  font-family: inherit;
+}
+
+.fork-calendar .rdp-caption {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.fork-calendar .rdp-nav_button {
+  border-radius: 12px;
+  padding: 6px;
+  border: 1px solid #e5e5e5;
+}
+
+.fork-calendar .rdp-head_cell {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.fork-calendar .rdp-day {
+  border-radius: 12px;
+  font-weight: 600;
+  border: 1px solid #e8e8e8;
+  background: white;
+  transition: 0.2s;
+}
+
+.fork-calendar .rdp-day:hover {
+  background: #f3f4f6;
+}
+
+.fork-calendar .rdp-day_selected {
+  background: #007a5e !important;
+  color: white !important;
+  border: none;
+}
+
+.fork-calendar .rdp-day_disabled {
+  color: #bbb;
+  background: #f9fafb;
+}
