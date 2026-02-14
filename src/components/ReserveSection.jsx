@@ -6,13 +6,14 @@ import { cuisineData } from "../utils/constants";
 import { items } from "../utils/constants";
 
 
+
 const ReserveSection = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto px-6 py-8">
-      <h2 className="text-2xl font-bold mb-4">For You</h2>
+    <div className="w-full max-w-4xl h-full mx-auto px-2 sm:px-6 py-8">
+      <h2 className="text-2xl font-bold  mb-4">For You</h2>
 
       <div className="border border-gray-100 rounded-xl max-h-64 overflow-y-auto">
-        <div className="space-y-2 p-4">
+        <div className="space-y-2 sm:p-4">
           {items.map(
             ({ id, icon: Icon, iconBg, iconColor, title, description }) => (
               <div
@@ -36,7 +37,7 @@ const ReserveSection = () => {
       </div>
 
       <h2 className="text-2xl font-bold mb-4 mt-8">Cuisines</h2>
-      <div className="border border-gray-100 rounded-xl max-h-72 overflow-y-auto">
+      <div className="border border-gray-100 rounded-xl min-h-72 overflow-y-auto">
         <div className="space-y-2">
           {cuisineData.map(({ id, icon: Icon, label, value }) => (
             <div

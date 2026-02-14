@@ -76,17 +76,26 @@ const variants = {
   },
 
   menu: {
-    wrapper: "flex w-full uppercase justify-start text-[#4D443D] ",
+    wrapper: " flex w-full text-center md:text-start uppercase justify-start text-[#4D443D] ",
+
     container: "relative w-full max-w-screen h-137.5",
     image: "w-full h-full object-cover",
-    contentBox:
-      "absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col space-y-2 px-4",
-    title: "text-6xl  font-bold text-[#4D443D] shrink-0",
-    subtitle: "mt-2 uppercase  text-[21px] font-bold   max-w-xl ",
+     contentBox:
+      "absolute top-[25%]  py-4 md:top-50 left-1/2 -translate-x-1/2 flex flex-col space-y-2 px-4 items-center text-center md:items-start md:text-left",
+    title:
+      "text-3xl min-w-xs md:min-w-xl md:text-6xl font-bold text-[#4D443D] shrink-0",
+
+    subtitle:
+      "mt-2 uppercase text-[14px] text-center md:text-start md:text-[21px] font-bold max-w-xl",
+
     button:
-      "relative overflow-hidden border border-black mt-12 font-semibold px-3 py-3 w-52 inline-block text-center group",
+      "relative overflow-hidden border border-black mt-12 font-semibold text-sm sm:text-base px-3 py-3 w-34 md:w-52 inline-block text-center group",
+
     buttonBg:
       "absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out",
+
+     imgContent: "absolute -right-[40%] top-40 md:right-1/7 w-full max-w-96 sm:w-xl",
+
     buttonText: "relative z-10",
   },
 };

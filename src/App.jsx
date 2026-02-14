@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import MenuPage from "./pages/MenuPage";
 import "react-datepicker/dist/react-datepicker.css";
 import ReserveTable from "./pages/ReserveTable";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
          <Route path="/menu" element={<MenuPage/>} />
 
            <Route path="/reserve" element={<ReserveTable/>} />
+
+            <Route path="/Contact" element={<ContactPage/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

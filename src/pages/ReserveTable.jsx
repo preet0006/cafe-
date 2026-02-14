@@ -17,20 +17,20 @@ const ReserveTable = () => {
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
-      <div className=" py-16 px-6 ">
+      <div className=" py-16 px-4 sm:px-6 ">
         <section className="text-center">
           <DetailsCard />
         </section>
 
-        <div className="flex space-x-4 mt-10 w-full h-[70dvh]">
-          <div className="  w-1/2 overflow-y-auto scrollbar-hide"> 
+        <div className="flex space-x-4  mt-10 w-full h-[70dvh]">
+          <div className=" w-full sm:w-1/2 sm:overflow-y-auto scrollbar-hide"> 
            
            <ReserveSection/>
 
            
           </div>
 
-          <div className="flex justify-center  items-center  w-1/2">
+          <div className="sm:flex hidden justify-center  items-center  w-1/2">
             <ReserveCalendar />
           </div>
         </div>

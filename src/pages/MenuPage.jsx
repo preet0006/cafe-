@@ -5,9 +5,9 @@ import { data } from "../utils/constants";
 
 const MenuPage = () => {
   return (
-    <div className="flex flex-col space-y-12 w-full min-h-screen">
+    <div className="flex  overflow-x-hidden flex-col space-y-12 w-full min-h-screen">
       <div className="flex w-full min-h-[110vh] bg-[url('/bimg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
-        <CardSection variant="menu" data={data[0].menu} />
+        <CardSection cardImage={'/carrot.png'} variant="menu" data={data[0].menu} />
       </div>
 
       <MenuSection />

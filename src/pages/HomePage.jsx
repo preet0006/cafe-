@@ -1,4 +1,5 @@
 import CardSection from "../components/CardSection";
+import TextCarousel from "../components/Carousel";
 import { data } from "../utils/constants";
 
 
@@ -29,16 +30,9 @@ export default function Home() {
         <div className="relative z-10 text-white">
          
 
-          <div className="flex  flex-col justify-center items-center h-screen text-center px-5">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight ">
-              This choice is <span className="">easy</span>
-              <br />
-              when it’s{" "}
-              <span className="relative inline-block">
-                <span className="">real food</span>
-                <span className="absolute left-0 -bottom-2 w-full h-2 bg-green-200 -z-10 rounded-md"></span>
-              </span>
-            </h1>
+          <div className="flex mt-10   flex-col justify-center items-center h-screen text-center px-5">
+               <TextCarousel/>
+            
           </div>
         </div>
       </div>
@@ -56,11 +50,11 @@ export default function Home() {
         <section className="relative flex  flex-col space-y-6 items-center  justify-center w-full uppercase text-start h-[80vh] px-6">
 
           <div className=" relative text-center sm:text-start  space-y-4">
-            <h5 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
+            <h5 className="text-3xl md:text-7xl font-bold tracking-tight text-white">
               About Our Achievements
             </h5>
 
-            <p className="text-[16px] md:text-[21px] font-extrabold sm:font-medium normal-case text-white w-full max-w-150 leading-relaxed">
+            <p className="text-[13px] md:text-[21px] font-extrabold sm:font-medium normal-case text-white w-full max-w-150 leading-relaxed">
               Once upon a time, cofounders Ian O’Meara and Darragh McFeely had a
               renowned beachside bistro in New Zealand that served real food.
               Fresh, delicious, wholesome, authentic food which was sourced from

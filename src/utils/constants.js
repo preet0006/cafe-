@@ -86,3 +86,56 @@ export const items = [
     description: "Enjoy a fast and secure checkout by skipping the queue",
   },
 ];
+
+
+
+export const locationsData = {
+  title: "LOCATIONS",
+  image: "/carrot.png",
+  sections: [
+    {
+      items: [
+        { text: "Albert St. Location" },
+        { text: "Monday - Friday: 11AM - 2PM" },
+        { text: "Sat, Sun: Closed" },
+        { text: "340 Albert St. Suite 140" },
+        { text: "Ottawa, Ontario, K1R 7Y6" },
+        { text: "(613) 235-5999", highlight: true },
+      ],
+    },
+    {
+      items: [
+        { text: "Queen St. Location" },
+        { text: "Monday - Friday: 10AM - 7PM" },
+        { text: "Sat, Sun: Closed" },
+        { text: "99 Bank Street Suite G009" },
+        { text: "Ottawa, Ontario, K1P 6B9" },
+        { text: "(613) 238-6026", highlight: true },
+      ],
+    },
+  ],
+};
+
+
+export const cateringData = {
+  title: "CATERING",
+  image: "/burg.png",
+  sections: [
+    {
+      items: [
+        { text: "Email order to:" },
+        { text: "catering@greenrebel.ca", highlight: true },
+        { text: "Or give us a call at:" },
+        { text: "(613) 232-3642", highlight: true },
+      ],
+    },
+    {
+      heading: "FEEDBACK",
+      items: [
+        { text: "Please don’t hesitate to send us your comments here:" },
+        { text: "customerfeedback@greenrebel.ca", highlight: true },
+      ],
+    },
+  ],
+};
+
