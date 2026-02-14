@@ -3,21 +3,13 @@ import TextCarousel from "../components/Carousel";
 import ShowCase from "../components/ShowCase";
 import { data } from "../utils/constants";
 
-
-
-
 export default function Home() {
   return (
-  <main className="flex flex-col m-auto max-w-400 min-h-screen overflow-x-hidden bg-[url('/boardck.jpg')] bg-fixed bg-cover bg-center">
- 
-      
-      
+    <main className="flex flex-col m-auto max-w-400 min-h-screen overflow-x-hidden bg-[url('/boardck.jpg')] bg-fixed bg-cover bg-center">
       <section className="relative h-[90dvh] sm:h-screen w-screen overflow-hidden">
-     
-      
         <video
           src="/video.mp4"
-          // autoPlay
+          autoPlay
           preload="metadata"
           muted
           loop
@@ -25,41 +17,48 @@ export default function Home() {
           className="absolute hidden sm:flex top-0 left-0 h-full w-full object-cover"
         />
 
-        <img className="md:hidden absolute w-full h-full object-cover" src="/homeo.jpg" alt="" />
+        <img
+          className="md:hidden absolute w-full h-full object-cover"
+          src="/homeo.jpg"
+          alt=""
+        />
 
         <div className="absolute top-0 left-0 h-full w-full bg-black/50"></div>
 
         <div className="relative z-10 text-white">
-         
-
           <div className="flex mt-10   flex-col justify-center items-center h-screen text-center px-5">
-               <TextCarousel/>
-            
+            <TextCarousel />
           </div>
         </div>
       </section>
- 
 
-          
       <section className="flex  relative flex-col space-y-28 min-h-screen">
-        <CardSection img={'/beet-icon.png'} cardImage={'/carrot.png'} variant="brown" data={data[0].menu} />
+        <CardSection
+          img={"/beet-icon.png"}
+          cardImage={"/carrot.png"}
+          variant="brown"
+          data={data[0].menu}
+        />
 
-        <CardSection darkimg={'/pumpkin-icon.png'}  variant="black" data={data[1].second} />
+        <CardSection
+          darkimg={"/pumpkin-icon.png"}
+          variant="black"
+          data={data[1].second}
+        />
 
-        <CardSection 
-        img={'/pumpkin.png'}
-        cardImage={'/beet.png'} 
-         variant="brown2" data={data[0].menu} />
+        <CardSection
+          img={"/pumpkin.png"}
+          cardImage={"/beet.png"}
+          variant="brown2"
+          data={data[0].menu}
+        />
 
-
-
-        <section className="relative flex  flex-col space-y-6 items-center  justify-center w-full uppercase text-start h-[60dvh] md:h-[100dvh] px-6">
-
-       <img
-        src="/img-board.jpg"
-        alt="Delivery Background"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+        <section className="relative flex  flex-col space-y-6 items-center  justify-center w-full uppercase text-start h-[60dvh] md:h-dvh px-6">
+          <img
+            src="/img-board.jpg"
+            alt="Delivery Background"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
 
           <div className=" relative text-center sm:text-start  space-y-4">
             <h5 className="text-3xl md:text-7xl font-bold tracking-tight text-white">
@@ -81,25 +80,20 @@ export default function Home() {
               </span>
             </button>
 
+            <img
+              className="absolute h-37.5 -bottom-15 -right-1/5"
+              src="./fresh-icon.png"
+              alt=""
+            />
 
-            <img className="absolute h-[150px] -bottom-15 -right-1/5" src="./fresh-icon.png" alt="" />
-
-
-              <div className="absolute -left-1/5  -top-14 ">
-           <img className="h-[150px]" src="./brui.png" alt="" />
-
+            <div className="absolute -left-1/5  -top-14 ">
+              <img className="h-37.5" src="./brui.png" alt="" />
+            </div>
           </div>
-
-          
-          </div>
-                    
         </section>
-
       </section>
 
-      <ShowCase/>
-
-    
+      <ShowCase />
     </main>
   );
 }

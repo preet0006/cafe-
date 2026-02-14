@@ -1,18 +1,20 @@
-# React + Vite
+```html
+//note these are the inital thoughts written before desing and everthing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- 5 pages homepage booking page menu show page contact page about us page
 
-Currently, two official plugins are available:
+Nav and  footer almost in all the pages 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+all images are stored locally automatically increase bundle size impact performance but that's not a problem right now
 
-## React Compiler
+Homepage=> hero cards another section showcasing reviews 
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+About us page contact details single component 
+swiper library to show text and image 
+Reusable component card used in all almost all pages 
+ 
+Table booking page  reusable card on top location of restaurant details and the images
+React picker used for calendar and data shows dynamically for sections according to the value in usestate
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Fixed data comes from utils
+ -->

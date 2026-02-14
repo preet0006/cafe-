@@ -7,6 +7,7 @@ import MenuPage from "./pages/MenuPage";
 import "react-datepicker/dist/react-datepicker.css";
 import ReserveTable from "./pages/ReserveTable";
 import ContactPage from "./pages/ContactPage";
+import AboutUs from "./pages/AboutPage";
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
            <Route path="/reserve" element={<ReserveTable/>} />
 
             <Route path="/Contact" element={<ContactPage/>} />
+
+            <Route path="/about" element={<AboutUs/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

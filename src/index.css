@@ -94,3 +94,6 @@
   scrollbar-width: none; 
 }
 
+.swiper-wrapper {
+  transition-timing-function: ease-in-out !important;
+}
