@@ -17,4 +17,11 @@ Table booking page  reusable card on top location of restaurant details and the 
 React picker used for calendar and data shows dynamically for sections according to the value in usestate
 
 Fixed data comes from utils
+
+
+
+For perfomance optimization
+could have use webp images types add cdn add priority to images and video on homepage . Low quality photos to  mobile  or 
+lazy loading  react compiler is there  so memoization of components not required but thats not the task or priority right now 
+
  -->

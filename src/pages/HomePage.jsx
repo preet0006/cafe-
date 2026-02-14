@@ -81,13 +81,13 @@ export default function Home() {
             </button>
 
             <img
-              className="absolute h-37.5 -bottom-15 -right-1/5"
+              className="absolute h-26 -right-1/9 md:h-37.5 -bottom-15 md:-right-1/5"
               src="./fresh-icon.png"
               alt=""
             />
 
-            <div className="absolute -left-1/5  -top-14 ">
-              <img className="h-37.5" src="./brui.png" alt="" />
+            <div className="absolute -left-8 md:-left-1/5  -top-14 ">
+              <img className="h-26 md:h-37.5" src="./brui.png" alt="" />
             </div>
           </div>
         </section>

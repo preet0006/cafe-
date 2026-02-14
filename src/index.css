@@ -15,19 +15,17 @@
   justify-content: center;
 }
 
-/* main calendar wrapper */
 .fork-calendar .rdp {
   margin: 0 auto;
 }
 
-/* months container */
+
 .fork-calendar .rdp-months {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-/* month itself */
 .fork-calendar .rdp-month {
   margin: 0 auto;
 }
@@ -51,7 +49,7 @@
 .fork-calendar .rdp-table {
   margin: 0 auto;
   border-collapse: separate;
-  border-spacing: 6px; /* gives elegant gap */
+  border-spacing: 6px; 
 }
 
 .fork-calendar .rdp-day {
@@ -97,3 +95,25 @@
 .swiper-wrapper {
   transition-timing-function: ease-in-out !important;
 }
+
+
+
+.fork-calendar .rdp-day_button:focus,
+.fork-calendar .rdp-day_button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.fork-calendar .rdp-day_selected .rdp-day_button {
+  background-color: #007a5e !important;
+  color: white !important;
+  border-radius: 14px !important;
+  border: none !important;
+}
+
+.fork-calendar .rdp-day_selected .rdp-day_button:hover {
+  background-color: #00644d !important;
+}
+
+
+

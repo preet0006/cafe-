@@ -1,7 +1,5 @@
 import React from "react";
-import {
-  ChevronRight,
-} from "lucide-react";
+import { ChevronRight} from "lucide-react";
 import { cuisineData } from "../utils/constants";
 import { items } from "../utils/constants";
 
@@ -9,7 +7,7 @@ import { items } from "../utils/constants";
 
 const ReserveSection = () => {
   return (
-    <div className="w-full max-w-4xl h-full mx-auto px-2 sm:px-6 py-8">
+    <div className="w-full mb-3 max-w-4xl h-full mx-auto px-2 sm:px-6 py-8">
       <h2 className="text-2xl font-bold  mb-4">For You</h2>
 
       <div className="border border-gray-100 rounded-xl max-h-64 overflow-y-auto">

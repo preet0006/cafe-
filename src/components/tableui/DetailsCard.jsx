@@ -29,14 +29,15 @@ const DetailsCard = () => {
       </div>
 
       <div className="mt-8 flex gap-4 overflow-x-scroll scrollbar-hide md:grid md:grid-cols-3 md:gap-4 md:overflow-x-hidden">
+
         {galleryImages.map((item) => (
           <div
             key={item.id}
-            className={`relative overflow-hidden rounded-2xl flex-shrink-0
-        ${item.big ? "w-[240px] h-[200px]" : "w-[200px] h-[200px]"}
-        md:w-auto md:flex-shrink md:${
+            className={`relative overflow-hidden rounded-2xl shrink-0
+        ${item.big ? "md:mt-12 w-60 h-70 md:h-90" : "w-70 h-70"}
+        md:w-auto md:shrink md:${
           item.big ? "col-span-1 row-span-2 h-70" : "h-33.75"
-        }`}
+          }`}
           >
             <img
               className={`h-full w-full object-cover rounded-2xl ${

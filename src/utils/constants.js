@@ -29,7 +29,7 @@ export const data = [
   },
 ];
 
-
+//reserve page 
 export const galleryImages = [
   {
     id: 1,
@@ -39,7 +39,7 @@ export const galleryImages = [
   },
   {
     id: 2,
-    src: "https://img.freepik.com/free-photo/restaurant-table-with-food_144627-34762.jpg?w=996",
+    src: "https://i.pinimg.com/736x/57/51/3a/57513a7ec6245b27f7bbfce544240e32.jpg",
     alt: "food",
   },
   {
@@ -59,6 +59,8 @@ export const galleryImages = [
     overlay: true,
     count: 217,
   },
+  
+  
 ];
 
 
@@ -139,6 +141,8 @@ export const cateringData = {
   ],
 };
 
+
+//card section classes
 export const variants = {
   brown: {
     wrapper:
@@ -237,5 +241,98 @@ export const variants = {
       "absolute -right-[40%] top-40 md:right-1/7 w-full max-w-96 sm:w-xl",
 
     buttonText: "relative z-10",
+  },
+};
+
+
+
+//menu page items
+export const menu = {
+  salads: {
+    heading: "Salad Boxes",
+    items: [
+      {
+        title: "Vegan Caesar (Vegan)",
+        desc: "Kale, microgreens, vegan parmesan, broccoli, croutons, sunflower seeds, vegan caesar dressing",
+      },
+      {
+        title: "Tofu Salad (Vegan)",
+        desc: "Mixed greens, microgreens, tofu, organic rice, cabbage, carrot, cucumber, sunflower seeds, mint, sesame dressing",
+      },
+      {
+        title: "BLAT Salad",
+        desc: "Romaine, bacon, feta, avocado, tomato, croutons, greek vinaigrette",
+      },
+      {
+        title: "Vietnamese Style",
+        desc: "House-roasted chicken, romaine, organic rice, carrot, cucumber, mint, cilantro, peanuts, broccoli, peanut sauce, chilli lime vinaigrette",
+      },
+    ],
+  },
+
+  burgers: {
+    heading: "Burgers",
+    items: [
+      {
+        title: "Classic Cheeseburger",
+        desc: "Beef patty, cheddar cheese, lettuce, tomato, pickles, onions, ketchup, and mustard on a brioche bun",
+      },
+      {
+        title: "Spicy Chicken Burger",
+        desc: "Crispy chicken fillet, spicy mayo, lettuce, tomato, jalapenos on a sesame bun",
+      },
+      {
+        title: "Vegan Burger",
+        desc: "Plant-based patty, vegan cheese, lettuce, tomato, pickles, vegan mayo on a whole-grain bun",
+      },
+      {
+        title: "Bacon BBQ Burger",
+        desc: "Beef patty, smoked bacon, cheddar cheese, onion rings, lettuce, BBQ sauce on a toasted bun",
+      },
+    ],
+  },
+
+  coffee: {
+    heading: "Coffee & Brews",
+    items: [
+      {
+        title: "Espresso",
+        desc: "Rich and bold espresso shot with intense flavor and aroma",
+      },
+      {
+        title: "Cappuccino",
+        desc: "Espresso with steamed milk and a thick layer of frothy foam",
+      },
+      {
+        title: "Latte",
+        desc: "Smooth espresso with steamed milk, lightly topped with foam",
+      },
+      {
+        title: "Iced Coffee",
+        desc: "Chilled brewed coffee served over ice, lightly sweetened",
+      },
+    ],
+  },
+
+  pizza: {
+    heading: "Pizzeria",
+    items: [
+      {
+        title: "Margherita",
+        desc: "Classic pizza with tomato sauce, fresh mozzarella, and basil",
+      },
+      {
+        title: "Pepperoni",
+        desc: "Tomato sauce, mozzarella, and generous slices of pepperoni",
+      },
+      {
+        title: "BBQ Chicken",
+        desc: "BBQ sauce base, grilled chicken, red onions, mozzarella, and cilantro",
+      },
+      {
+        title: "Veggie Delight",
+        desc: "Tomato sauce, mozzarella, bell peppers, mushrooms, olives, and spinach",
+      },
+    ],
   },
 };
