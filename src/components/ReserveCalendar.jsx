@@ -5,7 +5,7 @@ import { CalendarDays, Clock, Users, Tag } from "lucide-react";
 
 import Guest from "./tableui/Guest";
 import Options from "./tableui/Options";
-import Time from "./tableui/TIme";
+import Time from "./tableui/Time";
 
 const steps = [
   { id: "date", label: "Date", icon: CalendarDays },
