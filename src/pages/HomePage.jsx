@@ -1,5 +1,6 @@
 import CardSection from "../components/CardSection";
 import TextCarousel from "../components/Carousel";
+import ShowCase from "../components/ShowCase";
 import { data } from "../utils/constants";
 
 
@@ -7,16 +8,17 @@ import { data } from "../utils/constants";
 
 export default function Home() {
   return (
-  <div className="flex flex-col m-auto max-w-400 min-h-screen overflow-x-hidden bg-[url('/boardck.jpg')] bg-fixed bg-cover bg-center">
+  <main className="flex flex-col m-auto max-w-400 min-h-screen overflow-x-hidden bg-[url('/boardck.jpg')] bg-fixed bg-cover bg-center">
  
       
-
-      <div className="relative h-[90dvh] sm:h-screen w-screen overflow-hidden">
+      
+      <section className="relative h-[90dvh] sm:h-screen w-screen overflow-hidden">
      
       
         <video
           src="/video.mp4"
           // autoPlay
+          preload="metadata"
           muted
           loop
           playsInline
@@ -35,9 +37,11 @@ export default function Home() {
             
           </div>
         </div>
-      </div>
+      </section>
+ 
 
-      <div className="flex  relative flex-col space-y-28 min-h-screen">
+          
+      <section className="flex  relative flex-col space-y-28 min-h-screen">
         <CardSection img={'/beet-icon.png'} cardImage={'/carrot.png'} variant="brown" data={data[0].menu} />
 
         <CardSection darkimg={'/pumpkin-icon.png'}  variant="black" data={data[1].second} />
@@ -47,7 +51,15 @@ export default function Home() {
         cardImage={'/beet.png'} 
          variant="brown2" data={data[0].menu} />
 
-        <section className="relative flex  flex-col space-y-6 items-center  justify-center w-full uppercase text-start h-[80vh] px-6">
+
+
+        <section className="relative flex  flex-col space-y-6 items-center  justify-center w-full uppercase text-start h-[60dvh] md:h-[100dvh] px-6">
+
+       <img
+        src="/img-board.jpg"
+        alt="Delivery Background"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
           <div className=" relative text-center sm:text-start  space-y-4">
             <h5 className="text-3xl md:text-7xl font-bold tracking-tight text-white">
@@ -82,9 +94,12 @@ export default function Home() {
           </div>
                     
         </section>
-      </div>
+
+      </section>
+
+      <ShowCase/>
 
     
-    </div>
+    </main>
   );
 }

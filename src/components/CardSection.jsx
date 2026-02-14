@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 const variants = {
-
   brown: {
     wrapper:
       " relative flex w-full uppercase items-center justify-center md:justify-start text-[#4D443D]",
@@ -24,7 +23,7 @@ const variants = {
     buttonBg:
       "absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out",
 
-     imgContent: "absolute -right-[60%] w-full  -top-1/3 md:-right-1/5 sm:w-130",
+    imgContent: "absolute -right-[60%] w-full  -top-1/3 md:-right-1/5 sm:w-130",
 
     buttonText: "relative z-10",
   },
@@ -51,7 +50,7 @@ const variants = {
     buttonBg:
       "absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out",
 
-     imgContent: "absolute -right-[60%] top-60 md:-right-1/6 w-full sm:w-84",
+    imgContent: "absolute -right-[60%] top-60 md:-right-1/6 w-full sm:w-84",
 
     buttonText: "relative z-10",
   },
@@ -76,11 +75,12 @@ const variants = {
   },
 
   menu: {
-    wrapper: " flex w-full text-center md:text-start uppercase justify-start text-[#4D443D] ",
+    wrapper:
+      " flex w-full text-center md:text-start uppercase justify-start text-[#4D443D] ",
 
     container: "relative w-full max-w-screen h-137.5",
     image: "w-full h-full object-cover",
-     contentBox:
+    contentBox:
       "absolute top-[25%]  py-4 md:top-50 left-1/2 -translate-x-1/2 flex flex-col space-y-2 px-4 items-center text-center md:items-start md:text-left",
     title:
       "text-3xl min-w-xs md:min-w-xl md:text-6xl font-bold text-[#4D443D] shrink-0",
@@ -94,18 +94,17 @@ const variants = {
     buttonBg:
       "absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out",
 
-     imgContent: "absolute -right-[40%] top-40 md:right-1/7 w-full max-w-96 sm:w-xl",
+    imgContent:
+      "absolute -right-[40%] top-40 md:right-1/7 w-full max-w-96 sm:w-xl",
 
     buttonText: "relative z-10",
   },
 };
 
-const CardSection = ({ variant, data, cardImage, img,darkimg }) => {
+const CardSection = ({ variant, data, cardImage, img, darkimg }) => {
+  const [scrollY, setScrollY] = useState(0);
 
-
-    const [scrollY, setScrollY] = useState(0);
-  
-    useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -115,13 +114,12 @@ const CardSection = ({ variant, data, cardImage, img,darkimg }) => {
 
   return (
     <div className={styles.wrapper}>
-
-    
-      <img 
-       style={{ transform: `translateY(${scrollY * 0.14}px)` }}
-      className=" absolute w-45 left-3  " src={darkimg} alt="" />
-
-    
+      <img
+        style={{ transform: `translateY(${scrollY * 0.14}px)` }}
+        className=" absolute w-45 left-3  "
+        src={darkimg}
+        alt=""
+      />
 
       <div className={styles.container}>
         <img className={styles.image} src={data.image} alt="Menu Background" />
@@ -136,18 +134,16 @@ const CardSection = ({ variant, data, cardImage, img,darkimg }) => {
             <span className={styles.buttonText}>{data.buttonText}</span>
           </button>
 
-          <img
-           className="w-full ml-40 max-w-37.5" src={img} alt="" 
-          />
+          <img className="w-full ml-40 max-w-37.5" src={img} alt="" />
         </div>
 
-          <div className={styles.imgContent}>
+        <div className={styles.imgContent}>
           {cardImage && (
             <img
               src={cardImage}
               alt="decorative"
               className="w-full"
-             style={{ transform: `translateY(${-scrollY * 0.23}px)` }}
+              style={{ transform: `translateY(${-scrollY * 0.23}px)` }}
             />
           )}
         </div>

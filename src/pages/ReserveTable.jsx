@@ -1,6 +1,7 @@
 import ReserveCalendar from "../components/ReserveCalendar";
 import ReserveSection from "../components/ReserveSection";
 import DetailsCard from "../components/tableui/DetailsCard";
+import MobileBooking from "../components/tableui/MobileBooking";
 
 const ReserveTable = () => {
   return (
@@ -22,6 +23,8 @@ const ReserveTable = () => {
           <DetailsCard />
         </section>
 
+        <MobileBooking/>
+
         <div className="flex space-x-4  mt-10 w-full h-[70dvh]">
           <div className=" w-full sm:w-1/2 sm:overflow-y-auto scrollbar-hide"> 
            
@@ -30,7 +33,7 @@ const ReserveTable = () => {
            
           </div>
 
-          <div className="sm:flex hidden justify-center  items-center  w-1/2">
+          <div className="sm:flex hidden justify-center items-center  w-1/2">
             <ReserveCalendar />
           </div>
         </div>
